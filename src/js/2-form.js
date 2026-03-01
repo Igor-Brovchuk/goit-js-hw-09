@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', e => {
 form.addEventListener('input', e => {
   const name = e.target.name;
   const value = e.target.value;
-  formData[name] = value.trim();
+  formData[name] = value;
   const zip = JSON.stringify(formData);
   localStorage.setItem(STORAGE_KEY, zip);
 });
